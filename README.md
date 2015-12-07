@@ -47,7 +47,7 @@ $upload = $my_file_one->uploadImage();
 $my_file_two = new ImageUploader($_FILES['my_file']);
 
 $my_file_two->width = 200;
-$my_file_two->width = 599; // some crazy disproportional height
+$my_file_two->height = 599; // some crazy disproportional height
 $my_file_two->sendTo = 'uploads/';
 
 $upload = $my_file_two->uploadImage();
