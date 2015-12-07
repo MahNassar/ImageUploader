@@ -53,3 +53,16 @@ $my_file_two->sendTo = 'uploads/';
 $upload = $my_file_two->uploadImage();
 ```
 > **Note:** In order to use resizing features you need Imagick extension installed. Most servers have it by default, but just make sure to check yours using `phpinfo()`. 
+
+#### Renaming Image
+
+By default, when you create a new instance of ImageUploader it already handles your image setting a new unique name to it. To use a custom name, just do as bellow:
+
+```php
+$my_file = new ImageUploader($_FILES['my_file']);
+
+$my_file->sendTo = 'uploads/';
+$my_file->imageName = 'my-awesome-image-name';  // without extension
+
+$upload = $my_file->uploadImage(); // my-awesome-image-name.jpg (or png, etc)
+```
