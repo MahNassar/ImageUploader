@@ -31,7 +31,7 @@ if ($upload->isUploaded) {
 
 #### Resizing Image
 
-If you want to resize your image proportionally all you have to do is use `width` or `height` parameters alone. If you want to resize your image without respecting image ratio, simply use `width` and `height` together:
+If you want to resize your image proportionally all you have to do is use either `width` or `height` parameters alone. If you want to resize your image without respecting image ratio, simply use `width` and `height` together:
 
 ```php
 // Will Resize respecting ratio
