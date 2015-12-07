@@ -52,3 +52,4 @@ $my_file_two->sendTo = 'uploads/';
 
 $upload = $my_file_two->uploadImage();
 ```
+> **Note:** In order to use resizing features you need Imagick extension installed. Most servers have it by default, but just make sure to check yours using `phpinfo()`. 
